@@ -4,7 +4,7 @@ class ExperimentsController < ApplicationController
   end
 
   def page2
-    render :layout => 'bootsrap'
+    render :layout => '_bootstrap'
   end
 
   def page3
