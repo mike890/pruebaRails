@@ -15,18 +15,20 @@
 
 <div class="container">
   <div class="col-md-4">
-    <form action="" method="post">
+    <form action="<%= pages_voto_superman_path %>" method="post">
       <input name="name" value="">
       <input name="email" value=""><br>
-      <input type="submit" name="enviar" value="enviar">
+      <input type="submit" name="enviar" value="voto por superman">
     </form>
+    <h2 class="font2"><%= @count1 %> votos para superman</h2>
   </div>
   <div class="col-md-4 col-md-offset-4">
-    <form action="" method="post">
+    <form action="<%= pages_voto_batman_path %>" method="post">
       <input name="name" value="">
       <input name="email" value=""> <br>
-      <input type="submit" name="enviar" value="enviar">
+      <input type="submit" name="enviar" value="voto por batman">
     </form>
+    <h2 class="font2"><%= @count2 %> votos para batman</h2>
   </div>
-
 </div>
+    <h2 class= "font1" ><%= flash[:notice]%> </h2>
